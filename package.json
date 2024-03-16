@@ -1,0 +1,31 @@
+{
+  "name": "ajax-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/index.html --public-url /AJAX-hw",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0qsenxx/AJAX-hw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0qsenxx/AJAX-hw/issues"
+  },
+  "homepage": "https://github.com/0qsenxx/AJAX-hw#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "parcel": "^2.12.0"
+  },
+  "devDependencies": {
+    "pnotify": "^5.2.0"
+  }
+}
