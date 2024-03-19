@@ -26,7 +26,7 @@ const fetchCountries = _.debounce((searchQuery) => {
           text: "Too many matches found. Please enter a more specific query!",
         });
       }
-
+      buttonsListRef.innerHTML = ``;
       if (data.length >= 2 && data.length <= 10) {
         buttonsListRef.style.display = "block";
         data.forEach((country) => {
